@@ -16,7 +16,7 @@ public class App {
 //		m1.setSim(sim);
 		
 		m1.browseWeb();
-		
+		m1.showMobileInfo();
 		
 		m1=(Mobile)appContext.getBean("mobile");
 		m1=(Mobile)appContext.getBean("mobile");
