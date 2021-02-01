@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: music-api-gateway
+server:  port: 9411
+  
+zuul:  routes:    music-info:
+      path: /music/**
+      service-id: music-service
+      strip-prefix: false
+      
+    song-info:
+      path: /songs/**
+      service-id: song-service
+      strip-prefix: false
+      
+    artist-info:
+      path: /artists/**
+      service-id: artist-service
+      strip-prefix: false
